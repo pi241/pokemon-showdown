@@ -2125,6 +2125,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 202,
 		gen: 3,
 	},
+	garbodorite: {
+		name: "Garbodorite",
+		spritenum: 587,
+		megaStone: "Garbodor-Mega",
+		megaEvolves: "Garbodor",
+		itemUser: ["Garbodor"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 657,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 	garchompite: {
 		name: "Garchompite",
 		spritenum: 589,
