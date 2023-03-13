@@ -2135,8 +2135,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: 657,
-		gen: 6,
+		num: 927,
+		gen: 7,
 		isNonstandard: "Past",
 	},
 	garchompite: {
